@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loq.Laptop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('bg.jpg') no-repeat center center/cover;
+    min-height:100vh;
+}
+
+/* Dark professional overlay */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(5,10,20,0.88);
+    z-index:-1;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.logo{
+    color:white;
+    font-weight:700;
+    font-size:20px;
+    letter-spacing:1px;
+}
+
+.nav-links a{
+    color:#d6d6d6;
+    text-decoration:none;
+    margin-left:28px;
+    font-size:15px;
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:white;
+}
+
+header {
+    text-align: center;
+    padding-top:140px;
+    font-size: 46px;
+    font-weight: 700;
+    color:#ffffff;
+    letter-spacing:1.5px;
+}
+
+.subtext{
+    text-align:center;
+    color:#cfcfcf;
+    margin-top:14px;
+    margin-bottom:70px;
+    font-size:18px;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ULTRA PROFESSIONAL CARDS */
+.card {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 26px 30px;
+    margin: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.14);
+}
+
+.card h3{
+    margin-bottom:6px;
+    font-size:22px;
+    color:#ffffff;
+}
+
+.card p{
+    color:#bfbfbf;
+    font-size:14.5px;
+}
+
+/* PREMIUM BUTTON */
+.btn {
+    background: linear-gradient(135deg,#4c6fff,#6e8cff);
+    border:none;
+    color:white;
+    padding: 12px 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    transform:scale(1.08);
+}
+
+footer {
+    text-align: center;
+    padding: 60px;
+    color:#9a9a9a;
+    font-size:14px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media(max-width:768px){
+
+.navbar{
+    padding:16px 25px;
+}
+
+header{
+    font-size:34px;
+    padding-top:120px;
+}
+
+.card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<div class="logo">⚡ Loq.Laptop</div>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">Downloads</a>
+<a href="#">About</a>
+</div>
+</div>
+
+<header>
+Power Up Your Gaming Setup
+</header>
+
+<div class="subtext">
+Fast • Secure • Direct Downloads
+</div>
+
+<div class="container">
+
+<div class="card">
+    <div>
+        <h3>Wallpaper Engine</h3>
+        <p>Play live wallpapers smoothly</p>
+    </div>
+    <a class="btn" href="file/wallpaper-engine.rar" download>Download</a>
+</div>
+
+<div class="card">
+    <div>
+        <h3>Live Wallpaper</h3>
+        <p>High-quality animated wallpapers </p>
+    </div>
+    <a class="btn" href="https://vsthemes.org/en/" download>Download</a>
+</div>
+
+<div class="card">
+    <div>
+        <h3>4K Wallpaper Pack</h3>
+        <p>Ultra HD wallpapers for your setup</p>
+    </div>
+    <a class="btn" href="https://4kwallpapers.com/" download>Download</a>
+</div>
+
+<div class="card">
+    <div>
+        <h3>Steam Games Pack</h3>
+        <p>300+ AAA games collection </p>
+    </div>
+    <a class="btn" href="file/300+Game File.rar" download>Download</a>
+</div>
+
+<div class="card">
+    <div>
+        <h3>Steam Tool</h3>
+        <p>Install games easily in your Steam account </p>
+    </div>
+    <a class="btn" href="file/st-setup-1.8.30.exe" download>Download</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 Loq.Laptop | All Rights Reserved
+</footer>
+
+</body>
+</html>
